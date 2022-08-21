@@ -5,9 +5,6 @@ public class MoviesPosterManager {
     private String[] moviesPoster = new String[0];
     private int limit;
 
-    public MoviesPosterManager(int limit){
-        this.limit=limit;
-    }
     public MoviesPosterManager(){
         this.limit=10;
     }
