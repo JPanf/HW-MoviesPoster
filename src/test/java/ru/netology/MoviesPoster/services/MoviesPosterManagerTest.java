@@ -54,7 +54,7 @@ public class MoviesPosterManagerTest {
         manager.addNewMovie("film12");
         manager.addNewMovie("film13");
 
-        String[] actual = manager.findLast(4);
+        String[] actual = manager.findLast();
         String[] expected = {"film13", "film12", "film11", "film10"};
 
         Assertions.assertArrayEquals(expected, actual);
@@ -66,7 +66,7 @@ public class MoviesPosterManagerTest {
         manager.addNewMovie("film2");
         manager.addNewMovie("film3");
 
-        String[] actual = manager.findLast(7);
+        String[] actual = manager.findLast();
         String[] expected = {"film3", "film2", "film1"};
 
         Assertions.assertArrayEquals(expected, actual);
